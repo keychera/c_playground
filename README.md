@@ -13,6 +13,9 @@ gcc -o helloworld.exe hello.c
 helloworld.exe
 ```
 
+- vscode environment
+    - https://code.visualstudio.com/docs/languages/cpp
+
 learning from
 - https://www.youtube.com/playlist?list=PLEMXAbCVnmY6RverunClc_DMLNDd3ASRp
 - Head First C
