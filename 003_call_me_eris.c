@@ -2,6 +2,7 @@
 
 void skip(char *msg)
 {
+  puts(msg + 6);
   printf("%s\n", msg + 6);
   printf("%i\n", *(msg + 6));
   // this below is our first segfault
