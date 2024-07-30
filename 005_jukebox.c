@@ -22,6 +22,11 @@ int print_track(const int i, const char *track_name)
     return 0;
 }
 
+int (*getFunc(void))(const int, const char *)
+{
+    return print_track;
+}
+
 int main(int argc, char const *argv[])
 {
     char tracks[][80] = {
@@ -35,6 +40,6 @@ int main(int argc, char const *argv[])
     puts("Enter the track name: ");
     scanf("%79s", track_to_search);
     // somehow  fgets(search_for, 80, stdin); does not work
-    find_track_and_do_something(tracks, track_to_search, print_track);
+    find_track_and_do_something(tracks, track_to_search, getFunc());
     return 0;
 }
